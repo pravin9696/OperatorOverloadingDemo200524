@@ -1,0 +1,107 @@
+
+-method overriding
+-method overloading
+-operator overloading
+-
+
+
+operator overloading
+
+  public static return_type operator op(type t)
+     {
+         //statements
+     }
+
+here type is class or structure
+
+
+methodv overloading Vs method overriding
+
+-method overloading
+    - method name same but different parameters
+    - method overloading can be done in same class or in inheritance
+
+
+-method overriding
+
+  - method name and parameters must be same
+   - can be done in inheritance only(ie parent class and child class only)
+   - add keyword virtual before parent class method
+   - add keyword override before child class method 
+
+
+example of method overloading
+
+   class calculator
+      {
+        public void sum(int x,int y)
+             {
+             
+             }
+        public void sum(int a,int b,int c)
+             {
+              
+             }
+      }
+
+method overriding example
+
+class shape
+    {
+       virtual public void Calculate_Area()
+           {
+            
+           }
+    }
+ 
+  class circle:shape
+      {
+        override public void Caculate_Area()
+            {
+         
+            }
+      }
+
+
+
+reference variable of parent class= object of child class 
+
+
+
+
+
+
+Assignment on Operator Overloding
+
+1) write a class employee with some instance variables like emp_id, name, salary and dept.
+   overload following operators for given purpose
+
+     i) overload == operator to check two employees having same salary or not
+     ii) overload true / false operator to check employee having salary greater than 25000 or not
+     iii) overload + operator to add salary of two employees and store into thrid employees salary
+
+2) write a class circle with appropriate instance variable. overload following operators for different purpose as given below
+		i) overload == operator to compare two circle objects are equals or not
+		ii) overload ++ operator to increment radius of circle then calculate area of circle 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
